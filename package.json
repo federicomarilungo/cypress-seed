@@ -1,0 +1,38 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Prueba",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "pretest": "node ./cypress/reporting/delete-results.js",
+    "report": "node ./cypress/reporting/report.js",
+    "test": "cypress run",
+    "test-int": "cypress run --env enviroment='int'",
+    "test-qa": "cypress run --env enviroment='qa'"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/test-results/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "keywords": [
+    "Prueba"
+  ],
+  "author": "Panchop",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.11.0",
+    "cypress-cucumber-preprocessor": "^2.4.0",
+    "cypress-wait-until": "^1.7.1",
+    "eslint-plugin-cypress": "^2.11.1",
+    "multiple-cucumber-html-reporter": "^1.16.2"
+  },
+  "dependencies": {
+    "npm": "^6.14.5"
+  }
+}

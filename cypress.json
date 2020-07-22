@@ -1,0 +1,15 @@
+{
+  "testFiles": "**/*.feature",
+  "video": false,
+  "baseUrl": "https://dev.ejemplo",
+  "env": {
+    "qa": {
+      "host": "https://qa.ejemplo",
+      "token": "813838121579527497866:yJVrztlHWGEUILNLT7pt9KTG9ycRqs8m_GOft_9qJw64"
+    },
+    "int": {
+      "host": "https://dev.ejemplo",
+      "token": "813838121579527497866:yJVrztlHWGEUILNLT7pt9KTG9ycRqs8m_GOft_9qJw64"
+    }
+  }
+}
